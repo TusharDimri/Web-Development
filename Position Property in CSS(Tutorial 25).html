@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Property in CSS</title>
+    <style>
+        /* CSS Positions:- static(default), relative, sticky, fixed */
+        .parent{
+            height: 3000px;
+        }
+        .box {
+            border: 2px solid black;
+            height: 100px;
+            width: 23%;
+            margin: 5px;
+            box-sizing: border-box;
+            display: inline-block;
+        }
+
+        #box3 {
+            position: relative;
+            /* Position the element relative to its normal position and will leave a gap at its normal position*/
+            top: 25px;
+        }
+        #box1 {
+            position: absolute;
+            /* Position the element relative to its first parent container */
+            top: 100px;
+            left: 1000px;
+        }
+        #box4{
+            position: fixed;
+            /* Positions the element relative to the browser window and fixes it there */
+            bottom: 2px;
+            right: 2px;
+        }
+        #box2{
+            position: sticky;
+            top: 10px;
+            /* Positions the element relative to the first parent container and element gets fixed wehn we scroll to the specified position */
+        }
+    </style>
+</head>
+
+<body>
+    <header class="parent">
+        <div class="box" id="box1">1 Absolute</div>
+        <div class="box" id="box2">2 Sticky</div>
+        <div class="box" id="box3">3 Relative</div>
+        <div class="box" id="box4">4 Fixed</div>
+    </header>
+</body>
+
+</html>

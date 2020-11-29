@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Template Area</title>
+    <style>
+        .container{
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas: 
+            'navbar navbar navbar navbar'
+            'section section section aside'
+            'footer footer footer footer';
+        }
+        .item{
+            border: 2px solid black;
+            background-color: paleturquoise;
+            padding: 12px 23px;
+        }
+        #navbar{
+            grid-area: navbar;
+        }
+        #section{
+            grid-area: section;
+        }
+        #aside{
+            grid-area: aside;
+        }
+        footer{
+            grid-area: footer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav id="navbar" class="item">
+            Home About Contact Services
+        </nav>
+        <div id="section" class="item">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla tenetur voluptas nesciunt enim in dolorem, a aspernatur repellendus suscipit incidunt! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque fugit alias perferendis mollitia odit, maiores tempora possimus dolore deleniti eaque harum optio qui doloribus fuga excepturi voluptatibus dicta id commodi in praesentium nisi quisquam velit omnis quo. Quia, dolorum! Reprehenderit eum neque nobis officia tempora, repellendus similique dicta esse adipisci recusandae quasi quod rerum quia ducimus consequatur, deserunt saepe quisquam fuga ipsum iusto a optio vel? Eaque ut numquam eum eius, at nihil natus ratione libero voluptatem facilis similique omnis velit magnam sapiente harum iusto esse sunt maxime! Placeat, totam! Mollitia consectetur rerum iste doloribus vitae molestias cumque eius nisi velit sunt maiores incidunt, illo delectus omnis, accusamus numquam dicta non et quae voluptates alias saepe repellendus. Accusantium quia ullam veniam itaque excepturi enim in magnam cumque earum sequi, repudiandae cupiditate facilis provident neque repellat similique laboriosam saepe. Autem vero hic doloremque, omnis nam voluptate eveniet ullam ea iure harum fugiat blanditiis facere, molestiae itaque dolorum praesentium iusto officiis quos laborum provident dolores. Illum ipsa eaque deserunt possimus esse impedit necessitatibus velit excepturi, quas commodi fuga nobis culpa aperiam, mollitia laudantium eveniet, nostrum voluptatibus ut minus iste sit atque natus. Quisquam odio minima nisi? Nihil vel tempora voluptates voluptatem possimus!
+        </div>
+        <div id="aside" class="item">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut impedit expedita dolorum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora a quasi dicta inventore doloribus possimus quod cumque? Similique accusamus, tenetur laborum ipsa quasi qui cupiditate ab dolorem est obcaecati repellat veniam fugiat error a ratione nulla atque corporis fugit. Ea sunt ex quos nemo maxime, commodi ullam voluptate hic illum voluptatem aut saepe pariatur voluptates perspiciatis dolor vel tenetur quo quis officia? In necessitatibus quas consequuntur autem harum perspiciatis nihil!
+        </div>
+        
+        <footer class="item">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam, impedit non! Delectus?
+        </footer>
+
+        <!-- <div class="item">Item-1</div>
+        <div class="item">Item-2</div>
+        <div class="item">Item-3</div>
+        <div class="item">Item-4</div>
+        <div class="item">Item-5</div>
+        <div class="item">Item-6</div>
+        <div class="item">Item-7</div>
+        <div class="item">Item-8</div>
+        <div class="item">Item-9</div>
+        <div class="item">Item-10</div>
+        <div class="item">Item-11</div>
+        <div class="item">Item-12</div>
+        <div class="item">Item-13</div>
+        <div class="item">Item-14</div> -->
+    </div>
+</body>
+</html>

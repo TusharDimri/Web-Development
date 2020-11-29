@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spanning Multiple Rows and Columns in CSS Grid</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            
+            /* column-gap: 2rem;
+            row-gap: 1rem; */
+
+            gap: 1rem;
+
+        }
+        .box{
+            border: 2px solid black;
+            background-color: pink;
+            padding: 23px;
+        }
+        /* If in case we want to turn space occupied by Item-1,Item-2, Item-6 and Item-7 to a single item */
+        .box:first-child{
+            /* grid-column-start: 1;
+            grid-column-end: 3;
+
+            grid-row-start: 1;
+            grid-row-end: 3; */
+
+            /* Similar to range function in Python the value of grid-row/column-end is not inclusive */
+
+            /* Shorthand for above lines:- */
+            grid-column: 1 / span 2;
+            grid-row: 1 / span 2;
+
+            /* Note:-
+            grid-column: 1/span 2;
+            can also be written as 
+            grid-column:1/3;
+            Likewise grid-rows: ; can be written
+             */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">Item-1</div>
+        <div class="box">Item-2</div>
+        <div class="box">Item-3</div>
+        <div class="box">Item-4</div>
+        <div class="box">Item-5</div>
+        <div class="box">Item-6</div>
+        <div class="box">Item-7</div>
+        <div class="box">Item-8</div>
+        <div class="box">Item-9</div>
+        <div class="box">Item-10</div>
+        <div class="box">Item-11</div>
+        <div class="box">Item-12</div>
+        <div class="box">Item-13</div>
+        <div class="box">Item-14</div>
+        <div class="box">Item-15</div>
+    </div>
+</body>
+</html>

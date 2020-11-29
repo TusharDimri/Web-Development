@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow and Text Shadow</title>
+    <style>
+        .container{
+            display: flex;
+        }
+        .card{
+            padding: 23px 12px;
+            /* border: 2px solid black; */
+            margin: 23px 12px;
+            background-color:rgb(117, 117, 224); 
+
+            box-shadow: 12px 13px 23px 1px rgba(0, 255, 255, 0.5); 
+            
+            /* We have given arguments to box shadow : offset in x axis, offset in y axis, blur , spread radius and color of box box-shadow. The offest can be negative too.(Change value using developer tools to understand this/).Blur radius and Spread radius- check yourself using chrome developer tools. */
+            
+            /* rgba contains alpha(a) argument which decides the darkness of the color */
+
+            /* If we use inset in box shadow the shadow will be applied inwards rather than outwards */
+
+            /* We can give multiple box shadows by separaing values with a commma as:- */
+            box-shadow: 12px 13px 23px 1px rgba(0, 255, 255, 0.5), 21px 25px 23px 1px rgba(235, 5, 158, 0.5);
+
+            /* Godd Luck with box shadow */
+        }
+
+        .card h2{
+            text-shadow: 2px 3px 4px  red;
+            /* text shadow works similar to box shadow and takes same arguments excet for spread radius */
+            /* If we have an image which has some text. We can use text shadow on the text to make it more visible and look professional */
+            /* Similar to box shadow offset x and offset y can have -ve values  */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card" id="card-1">
+            <h2>
+              C Course
+            </h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum omnis cumque, atque harum dicta fugiat tempora tempore sit doloribus, debitis quidem nisi rerum! Eligendi, odit!</p>
+        </div>
+        <div class="card" id="card-2">
+            <h2>
+              C++ Course
+            </h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium architecto laborum perferendis, adipisci culpa deleniti magni id exercitationem cupiditate, ad sed asperiores sapiente pariatur ea?</p>
+        </div>
+        <div class="card" id="card-3">
+            <h2>
+              Python Course
+            </h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis deserunt accusamus debitis expedita quas nisi eius corporis totam vel. Odit incidunt corrupti doloremque qui neque?</p>
+        </div>
+    </div>
+</body>
+</html>

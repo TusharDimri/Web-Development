@@ -1,0 +1,1 @@
+This is file used for learning fs module in node.js.

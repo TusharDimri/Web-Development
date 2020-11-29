@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables and Custom Properties</title>
+    <style>
+        :root{
+            --text-shadow-color: red; /* This is a Global Variable*/
+            --primary-color: teal;
+            --box-height: 200px;
+            --box-width: 200px;
+            --max-width: 500px;
+            --max-height: 400px;
+        }
+        .box{
+            --box-color: cyan; /* This is a css variable (Local Variable).We can access this only inside this selector */
+            height: var(--box-height);
+            width: var(--box-width);
+            background-color: var(--box-color) ;
+            border: 2px solid red;
+            margin: 2px 9px;
+            box-shadow: 10px 10px 30px var(--box-color);
+            /* Do note that the scope of the variable is limited within this block/selector (.box) and it cannot be used outside this block */
+        }
+        
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color:var(--primary-color);
+            max-width: var(--max-width);
+            height: var(--max-height);
+            margin: auto;
+        }
+        .container h3{
+            text-shadow: 1px 1px 1px var(--text-shadow-color);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h3>I am Me</h3>
+        </div>
+        <div class="box">
+            <h3>I am Me</h3>
+        </div>
+        <div class="box">
+            <h3>I am Me</h3>
+        </div>
+    </div>
+</body>
+</html>

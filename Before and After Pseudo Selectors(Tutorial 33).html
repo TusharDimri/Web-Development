@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and After Pseudo Selectors</title>
+    <link rel="stylesheet" href="https://source.unsplash.com/collection/190727/1600x900">
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            /* background-color: black; */
+            color: black;
+            
+        }
+        section{
+            height: 350px;
+            /* border: 2px solid white; */
+            margin: 3px 53px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        section::before{
+            /* We will use this pseudo selector to add content before section */
+            content: "Before Pseudo Selector Content";
+            /* Do note that content will be a part of section  */
+        }
+        section::after{
+            content: "After Pseudo Selector Content";
+        }
+        h1{
+            font-size: 4rem;
+        }
+        header::before{
+            content: "";
+            background: url('https://source.unsplash.com/collection/190727/1600x900') no-repeat center/cover;
+            /* Just adding background image won't do the work.We need to set position to absolute and set width and height. */
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            /* We set top and left to 0 to remove empty spaces */
+            z-index: -1;
+            opacity: 0.5;
+            /* We used z-index to stack the image and opacity to make content stacked above image more visible */
+
+            /* The real use of before and after pseudo selectors is as we used here.We fixed the image in the background. */
+        }
+        .navigation{
+            display: flex;
+            font-size: 23px;
+
+        }
+        li{
+            list-style: none;
+            padding: 20px 23px;
+        }
+        h1{
+            font-size: 4rem;
+        }
+        p{
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Services</li>
+                <li class="item">About Us</li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h1>Welcome To My World</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores nulla veritatis soluta harum nemo, similique in reprehenderit sequi sed temporibus accusantium consequuntur. Soluta, optio facilis!</p>
+    </section>
+    
+</body>
+</html>

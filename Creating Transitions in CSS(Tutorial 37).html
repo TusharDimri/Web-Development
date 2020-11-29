@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cresting Transitions in CSS</title>
+    <style>
+        .box{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 200px;
+            width: 200px;
+            background-color: pink;
+            border: 10px solid yellow;
+            transition-property: background-color;
+            transition-duration: 2s;
+            transition-timing-function: ease-in;
+            transition-timing-function: ease-out;
+            transition-timing-function: ease-in-out;
+            transition-delay: 0.3;
+            /* As we observed, takes the same arguments as animation */
+
+            /* Shorthand for Transition:- */
+            /* transition: property transition-duration transition-timing-function delay; */
+            transition: border 2s ease-in-out 0.3s;
+
+            /* We can simultaneously transition properties like:- */
+            transition: all 2s ease-in-out 0.3s;
+
+            /* If we use these one after another rather than using all attribute the transitions will happen simultaneously rather than happening one after another. */
+            
+
+        }
+        .box:hover{
+            background-color: cyan;
+            border: 10px solid blue;
+            height: 250px;
+            width: 250px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h3>This is CSS Transition Tutorial</h3>
+    <div class="container">
+        <div class="box">This is my Box</div>
+    </div>
+</body>
+</html>

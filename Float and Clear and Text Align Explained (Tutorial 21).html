@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment</title>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital@1&display=swap" rel="stylesheet">
+    <style>
+    *{
+        box-sizing: border-box;
+    }
+    body{
+        font-family: 'Ubuntu', sans-serif;
+    }
+    .container{
+        width: 900px;
+        border: 3px solid black;
+        margin: 35px auto; /* This aligns the container to the center as margin in x-axis is set automatically */
+        background-color: rgb(252, 218, 218);
+    }
+    .items{
+        border: 3px solid grey;
+        margin: 12px 3px;
+        padding: 12px 3px;
+        background-color: rgb(197, 243, 243);
+    }
+    #fruits{
+        float: left;
+        width: 49%;
+    }
+    #tech{
+        float: right;
+        width: 49%;
+    }
+    #stationary{
+        /* float: left; */
+        width: 99%;
+        /* clear: left;
+        clear: right; */
+        clear: both;
+        /* clear is used to prevent overlapping when a element with float is overlapping an element without float, in this case stationary was being overlapped by fruits which is floating left and tech that is floating right. We can clear overlapping by left floating, right floating, both by setting clear property as left, right or both respectively. */
+    }
+    p{
+        text-align: left;
+        text-align: right;
+        text-align: center;
+        text-align: justify;
+    }
+    h3{
+        text-align: center;
+    }
+    h1{
+        text-align: center;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>
+            Daily Needs Store
+        </h1>
+        <div id="fruits" class="items">
+            <h3>Fruits</h3>
+            <p id="fruitspara" class="para">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo quod fugiat laborum quidem unde error soluta? Corrupti blanditiis in at. Distinctio excepturi atque cupiditate laudantium!
+            </p>
+        </div>
+        <div id="tech" class="items">
+            <h3>Tech Items</h3>
+            <p id="techpara" class="para">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo quod fugiat laborum quidem unde error soluta? Corrupti blanditiis in at. Distinctio excepturi atque cupiditate laudantium!
+            </p>
+        </div>
+        <div id="stationary" class="items">
+            <h3>Stationary</h3>
+            <p id="stationarypara" class="para">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo quod fugiat laborum quidem unde error soluta? Corrupti blanditiis in at. Distinctio excepturi atque cupiditate laudantium!
+            </p>
+        </div>
+    </div>
+</body>
+</html>

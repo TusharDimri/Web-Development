@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Property</title>
+    <style>
+        header{
+            border: 2px solid black;
+            width: 50%; /* We can set width because header is a block element, we can't set width for inline elements as inline elements get their width automatically accoring to their element */
+            margin: auto;
+        }
+       img{
+           display:block;
+           width: 250px;
+           margin: auto;
+       }
+       h2{
+           font-family: fantasy;
+           margin: 0px;
+           font-size: 55px;
+           text-align: center;
+       }
+       h3{
+           text-align: center;
+       }
+       p{
+           text-align: justify;
+       }
+       .box{
+           border: 4px solid black;
+           margin: 23px;
+           padding: 35px;
+           display: inline-block;
+           width: 30%;
+           box-sizing: border-box;
+       }
+    </style>
+</head>
+<body>
+    <header class="top">
+        <img src="Coronavirus.ico" alt="Image">
+        <h2>Welcome to my Blog</h2>
+    </header>
+    <div class="box">
+        <h3>
+            Heading
+        </h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores ut esse atque animi, ipsa dolor, fugit consectetur iusto quidem, molestias facilis possimus? Aliquid sequi esse inventore maiores impedit et molestias iste accusantium totam. Recusandae?</p>
+    </div>
+    <div class="box">
+        <h3>
+            Heading
+        </h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores ut esse atque animi, ipsa dolor, fugit consectetur iusto quidem, molestias facilis possimus? Aliquid sequi esse inventore maiores impedit et molestias iste accusantium totam. Recusandae?</p>
+    </div>
+    <div class="box">
+        <h3>
+            Heading
+        </h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores ut esse atque animi, ipsa dolor, fugit consectetur iusto quidem, molestias facilis possimus? Aliquid sequi esse inventore maiores impedit et molestias iste accusantium totam. Recusandae?</p>
+    </div>
+</body>
+</html>

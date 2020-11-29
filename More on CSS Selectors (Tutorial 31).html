@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        h1{
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+        
+        
+        div p{
+            background-color: black;
+            color: white;
+        }
+        /* This selector will be applied to those p tags that are inside a div tag but these tags can have any tags in betwwen their hierarchy i.e. p may or may no be a direct child of div  */
+        
+        
+        div li p{
+            font-weight: bold;
+            color: chartreuse;
+        }
+
+        /* The above selector will be applied to those p tags insite li tag which is inside another div tag but these tags can have any tags in betwwen their hierarchy i.e. p may or may no be a direct child of div */
+        
+        
+        div > p{
+            font-weight: bold;
+            color: cyan;
+        }
+        
+        /* The above selector will follow specified hierarchy i.e. it will be applied to only those p tage which are directly after div tag with no tag in between i.e. p is a direct child of div */
+        
+        
+        div + p{
+            text-align: center;
+        }
+
+        /* The above selector will only affect those p tags which have a div tag (be it ending or opening) just prior to it i.e. p is the next sibling of div */
+    </style>
+</head>
+<body>
+    <h1>
+        This is my Heading 
+    </h1>
+    <div class="container">
+        <div class="row">
+            <p>This is a paragraph</p>
+        </div>
+        <p>This is another paragraph</p>
+        <ul>
+            <li><p>A paragraph inside li</p></li>
+            <li>This will not be affected</li>
+        </ul>
+    </div>
+    <p>This is the outermost paragraph</p>
+</body>
+</html>

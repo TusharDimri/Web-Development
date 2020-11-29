@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using Media Queries with CSS Grid</title>
+    <style>
+        body{
+            color: white;
+        }
+
+        .container{
+            display: grid;
+            gap: 1rem;
+            grid-template-areas: 
+            'navbar navbar navbar navbar'
+            'section section section aside'
+            'footer footer footer footer';
+        }
+
+        @media only screen and (max-width: 300px) {
+            /* 
+            0px <= height <=300px
+            */
+            body{
+                background-color: purple;
+            }
+
+            .container{
+            grid-template-areas: 
+            'navbar navbar navbar navbar'
+            'section section section section'
+            'aside aside aside aside'
+            'footer footer footer footer'
+            ;
+            }
+             
+            aside{
+                display: none;
+            }
+
+            span{
+                display: block;
+                text-align: center;
+            }
+        }
+
+        @media only screen and (min-width: 301px) and (max-width:500px) {
+            /* 
+            301px <= height <= 500px
+            */
+            body{
+                background-color: red;
+            }
+            
+            .container{
+            grid-template-areas: 
+            'navbar navbar navbar navbar'
+            'section section section section'
+            'aside aside aside aside'
+            'footer footer footer footer'
+            ;
+            }
+
+            span{
+                display: block;
+                text-align: center;
+            } 
+        }
+
+        @media only screen and (min-width: 501px) and (max-width: 800px) {
+            /* 
+            501px <= height <=300px
+            */
+            body{
+                background-color: cyan;
+            }
+
+
+        }
+
+        @media only screen and (min-width: 801px) {
+            /* 
+            801px <= height
+            */
+            body{
+                background-color: pink;
+            }
+        }
+
+
+        .border-now{
+            border: 2px solid black;
+            padding: 23px;
+            background-color: wheat;
+        }
+        nav{
+            grid-area: navbar;
+        }
+        section{
+            grid-area: section;
+        }
+        aside{
+            grid-area: aside;
+        }
+        footer{
+            grid-area: footer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar border-now">
+            <span>Home</span>
+            <span>About</span>
+            <span>Services</span>
+            <span>Contact</span>
+        </nav>
+        <section class="border-now">
+            <h2>Learn Javascript and Python</h2>
+        </section>
+        <aside class="border-now">
+            <h1>More About Us</h1>
+        </aside>
+        <footer class="border-now">Copyrigt TD Classes</footer>
+    </div>
+</body>
+
+</html>

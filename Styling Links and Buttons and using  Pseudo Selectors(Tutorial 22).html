@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styling Links and Buttons and Using</title>
+    <style>
+        .container{
+            border: 2px solid black;
+            background-color: rgb(179, 194, 236);
+            margin: 35px auto;
+            padding: 25px;
+            width: 50%;
+        }
+        h1{
+            text-align: center;
+        }
+        p{
+            text-align: justify;
+        }
+        button{
+            border: 2px solid black;
+            background-color: rgb(240, 229, 229);
+            float: right;
+            cursor: pointer; /* This converts the cursor into a pointer when we hover over this */
+            padding: 5px;
+        }
+        a{
+            font-size: 20px;
+            text-decoration: none; /* This removes underline(default) from  our link */
+            color: black;
+        }
+        .btn:hover{
+            background-color:white;
+            color: red;
+        }
+        .btn:visited{
+            background-color: grey;
+        }
+        .btn:active{
+            color: blue;
+        }
+        h1:hover, p:hover {
+            cursor: default;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>This is my Heading</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia id, ex amet, corrupti odio est consequuntur, quod voluptas dolor fugit neque eligendi culpa! Itaque voluptatibus recusandae dolore, at vel corrupti, sint rerum quae dignissimos earum aliquid, maiores quis ullam repudiandae ipsam illo dolores. Deleniti vitae voluptatibus minima officia illo vel.</p>
+        <a href="#" class="btn">Read More</a>
+        <button class="btn">Contact Us</button>
+    </div>
+</body>
+</html>

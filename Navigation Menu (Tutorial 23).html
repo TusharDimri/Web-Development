@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation</title>
+    <style>
+        .navbar{
+            background-color: black;
+            border-radius: 30px;
+        }
+        .navbar ul{
+            overflow: auto; /* This is because elements that float left overflow from their parants. In this case li overfllow from ul */
+        }
+        .navbar li{
+            float: left;
+            list-style: none; /* To Remove Bullets in li */
+            margin: 25px 25px;
+        }
+        .navbar li a{
+            text-decoration: none;
+            color: white;
+            padding: 3px 3px;
+        }
+        .navbar li a:hover{
+            color: red;
+            background-color: grey;
+        }
+        .search{
+            color: white;
+            float: right;
+            margin: 22px 63px;
+            padding: 3px 3px;
+        }
+        .navbar input{
+            padding: 0px 17px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact Us</a></li>
+                    <div class="search">
+                        <input type="text" name="text"
+                        id="text" placeholder="Search">
+                    </div>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>

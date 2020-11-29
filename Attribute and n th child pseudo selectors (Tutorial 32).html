@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribite and n th child Pseudo Selectors</title>
+    <style>
+        .container{
+            margin: 34px 23px;
+            display: block;
+            width: 233px;
+            margin: auto;
+        }
+        
+        input{
+            display: block;
+        }
+        
+        input[type='text']{ /*  [type='text'] is a pseudo selector targeting attribute of input tags*/
+            padding: 23px;
+            border: 2px solid black;
+        }
+        
+        a[target]{
+            color: black;
+            font-size: 100px;
+            text-align: center;
+        }
+        /* The above selector targets only those a tags with target value defined */
+        
+        li:nth-child(3){
+            color: red;
+        }
+        /* The above selector will be applied to the 3rd element from starting in the list of li tags */
+
+        li:nth-child(2n + 0){
+            color: royalblue;
+        }
+        /* The above selector will be applied to the every even element from starting in the list of li tags */
+
+        /* Do note that if the value specified to the nth child pesud0 selector evaluates to zero then no element is affected */
+
+        li:nth-child(odd){
+            background-color: skyblue;
+        }
+        /* The above selector will be applied to the every odd element from starting in the list of li tags. Also, we can give 'even' in place of 'odd' */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="http://google.com" target="_blank">Google</a>
+        <a href="http://codewithharry.com" target="_self">codewithharry</a>
+        <a href="http://facebook.com">Facebook</a>
+        <form action="" class="form-control"></form>
+            <input type="text" placeholder="Enter your name">
+            <input type="password" placeholder="Enter your password">
+            <input type="submit" value="submit">
+        <ul>
+            <li class="item" id="item1">Item 1</li>
+            <li class="item" id="item2">Item 2</li>
+            <li class="item" id="item3">Item 3</li>
+            <li class="item" id="item4">Item 4</li>
+            <li class="item" id="item5">Item 5</li>
+            <li class="item" id="item6">Item 6</li>
+            <li class="item" id="item 7">Item 7</li>
+            <li class="item" id="item 8">Item 8</li>
+            <li class="item" id="item9">Item 9</li>
+            <li class="item" id="item10">Item 10</li>
+        </ul>
+    </div>
+</body>
+</html>

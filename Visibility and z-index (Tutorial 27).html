@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibility and z-index</title>
+    <style>
+        .box{
+            width: 170px;
+            height: 170px;
+            border: 2px solid black;
+        }
+        #box1{
+            background-color: cornflowerblue;
+            position: relative;
+            top: 54px;
+
+        }
+        #box2{
+            background-color: darkcyan;
+            /* visibility: hidden; */
+            /* This hides the element but its space is still reserved */
+            
+            /* display: none; */
+            /* This removes the element along with its reserved space */
+
+            position: relative;
+            /*  z-index -1 means the elemnt above it will be shown.The element with greatwer z-index will be shown above the other element */
+            z-index: -1; 
+            /* If we have two boxes one over another, then x-index specifies which box will be shown */
+            /* z-index works only for position: absolute, relative, fixed and sticky */
+        }
+        #box3{
+            background-color: darksalmon;
+        }
+        #box4{
+            background-color: turquoise;
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline, Internal and External CSS</title>
+    <style>
+        p{
+            background-color: crimson !important;
+        }
+        </style>
+    <link rel="stylesheet" href="Tutorial13.css">
+</head>
+<body>
+    <p style="color: chartreuse;">Hello World</p>
+</body>
+</html>
+
+<!-- 
+    NOTE:-
+
+    Inline CSS is given precedence over Internal CSS and External CSS.
+
+    Between Internal CSS and External CSS, precedence is given to the one which is called later in the head of the document.
+
+    If we want to give precedence to any CSS(External or Internal)  we use the !important attribute
+    (Check line 12).
+ -->

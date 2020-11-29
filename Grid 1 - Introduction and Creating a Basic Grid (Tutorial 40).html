@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to CSS Grid</title>
+    <style>
+        .container{
+            display: grid;
+            /* grid-template-columns: 300px 100px 100px; */
+            /*Above line will create 3 columns of 300px , 100px and 100px width respectively.  */
+            
+            /* grid-template-columns: 300px auto 300px; */
+
+            grid-template-columns: 1fr 3fr 1fr;
+            /* Above line will create columns with width in the ratio 1:3:1 */
+
+            /* grid-template-columns: repeat(10, auto); */
+            /* Aboce line will create 10 columns with width of each column set automatically by the browser */
+
+            grid-gap: 1.5rem;
+        }
+        .item{
+            /* height: 100px;
+            width: 100px; */
+            background-color: cornflowerblue;
+            margin: 5px;
+            padding: 15px 5px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">This is item-1</div>
+        <div class="item">This is item-2</div>
+        <div class="item">This is item-3</div>
+        <div class="item">This is item-4</div>
+        <div class="item">This is item-5</div>
+        <div class="item">This is item-6</div>
+        <div class="item">This is item-7</div>
+        <div class="item">This is item-8</div>
+        <div class="item">This is item-9</div>
+        <div class="item">This is item-10</div>
+        <div class="item">This is item-11</div>
+        <div class="item">This is item-12</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Height, Width, Border and Background in CSS</title>
+    <style>
+        #first-para{
+            background-color: yellow;
+            height: 120px;
+            width: 500px;
+            border-width: 2px;
+            border-style: solid;
+            border-color: black;
+
+            /* Shorhand for above 3 lines:- */
+            border: 2px solid black;
+
+            border-radius: 13px;
+        }
+        #second-para{
+            background-color: rgb(97, 157, 206);
+            height: 120px;
+            width: 500px;
+            border-left: 2px solid violet;
+            border-right: 2px solid rgb(243, 12, 43);
+            border-top: 2px solid rgb(29, 136, 197);
+            border-bottom: 2px solid rgb(39, 216, 62);
+            border-top-left-radius: 12px;
+            border-top-right-radius: 15px;
+            border-bottom-left-radius: 8px;
+            border-bottom-right-radius: 10px;
+        }
+        #third-para{
+            height: 500px;
+            width: 500px;
+            background-image: url('https://www.codewithharry.com/static/home/img/photo.png');
+            border: 2px solid black;
+
+            /* background-repeat: repeat-x;
+            background-repeat: repeat-y; */
+            background-repeat: no-repeat;
+
+            background-position: center top;
+            background-position: top left;
+            background-position: 23px 34px;  /* x coordinate is given first and then y coordinate is given */
+            background-position: center center;
+            margin: auto; /* Will be discussed later */
+        }
+    </style>
+</head>
+<body>
+    <h3>
+        This is Heading
+    </h3>
+    <p id="first-para">This is a Paragraph</p>
+    <p id="second-para">This is a Paragraph</p>
+    <p id="third-para">This is a Paragraph</p>
+</body>
+</html>

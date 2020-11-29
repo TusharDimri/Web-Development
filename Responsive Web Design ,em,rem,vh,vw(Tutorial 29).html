@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Size Units for Resonsive Web Designing</title>
+    <style>
+        html{
+            font-size: 10px;
+        }
+        .container{
+            font-size: 20px;
+            border: 2px solid black;
+            
+            /* width: 400px; */
+            /* height: 300px; */
+            
+            height: 100vh;
+            /* vh stands for viewport height and its value set to 100 means that it will completely occupy the viewport's height */
+            width: 50vw;
+            /* vw stands for viewport width and its value set to 50 means that it will  occupy half of the viewport's width */
+            /* Also note that vh and vw 100 means maximum screen seen in the viewport. vh and vw are like percentage. */
+            margin: auto;
+        }
+        h1{
+            text-align: center;
+        }
+        #first{
+            font-size: 3em;
+            /* em value sets the size to em value multiplied by first parent's size i.e. 20px in this case */
+            
+            /* padding: 2em; */
+            /* Note that padding value will be 2 times of the above font size in px */
+        }
+        #second{
+            font-size: 5rem;
+            /* rem value sets the size to rem value multiplied by base html value i.e. 10px in this case */
+
+            padding: 3rem;
+            /* Note that every rem value is multilcatively relative to the base html value(line 8-10) */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="first">First heading</h1>
+        <h1 id="second">Second heading</h1>
+        <h1 id="third">Third heading</h1>
+    </div>
+</body>
+</html>

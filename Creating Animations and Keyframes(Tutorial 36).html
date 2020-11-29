@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating Animations and Keyframes</title>
+    <style>
+        .container{
+            background-color: turquoise;
+        }
+        .box{
+            background-color: teal;
+            width: 250px;
+            height: 250px;
+            position: relative;
+            
+            /* animation-name: tushar1; */
+            animation-name: tushar2;
+
+            animation-duration : 2.7s;
+            animation-iteration-count: infinite;
+            
+            animation-fill-mode: forwards;
+            /* Animation will stop at its current location when we reload the page*/
+            /* animation-fill-mode: alternate; */
+            
+            animation-timing-function: ease-in;
+            /* Slow in the beginning and faster towards the end*/
+
+            animation-timing-function: ease-out;
+            /* Fast in the beginning and slower towards the end*/
+
+            animation-timing-function: ease-in-out;
+            /* Fast in the beginning slow in the middle and fast towards the end*/
+
+            animation-delay: 1s;
+            /* This the the delay time begore the animation starts */
+
+            animation-direction: reverse;
+            animation-direction: alternate;
+
+            /* Shorthand for animation properties  */
+            
+            /* 
+            animation : animation-name animation-duration timing-function  animation-delay animation-iteration-count animation- fill-mode
+            */
+            
+
+        }
+
+
+        @keyframes tushar2 {
+            0%{
+              top: 0px;
+              left: 0px;;    
+            }
+            25%{
+                top:250px;
+                left: 0px;
+            }
+            75%{
+                top:250px;
+                left:250px;
+            }
+            100%{
+                top: 0px;
+                left: 250px;
+            }
+        }
+
+        @keyframes tushar1 {
+            from{
+                width: 250px;
+            }
+            to{
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            This is a box
+        </div>
+    </div>
+</body>
+</html>

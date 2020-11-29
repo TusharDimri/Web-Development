@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Tutorials</title>
+    <style>
+        #btn {
+            padding: 4px;
+            color: black;
+            border: 2px solid black;
+            background-color: rgb(165, 165, 165);
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+    <script>
+        // You can write you JS here.
+    </script>
+</head>
+
+<body>
+    <h1 style="text-align: center;">Javascript Tutorials</h1>
+    <div class="container">
+        <div class="row">
+            <p>This is a row inside a container</p>
+        </div>
+        <div id="content">
+            <ul id="nav">
+                <li>Home</li>
+                <li>About Us</li>
+                <li>Services</li>
+                <li>Contact Us</li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <p>This is another paragraph</p>
+        <p id="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt exercitationem dolorem est deserunt
+            debitis incidunt, tempore quos iste facilis culpa at totam consectetur repudiandae. Officiis, consectetur
+            repellat. Autem consectetur quo asperiores quidem ad unde fuga, nulla excepturi placeat aspernatur ipsam
+            quaerat ipsum magnam qui nihil quasi et fugit cum possimus!</p>
+        <button id="btn" onclick="toggleHide()">Show/Hide</button>
+        <!-- hide() function will run on clicking this button -->
+        <p>Time Is:- <span id="time"> </span></p>
+    </div>
+
+    <!-- Our Javascript -->
+    <script>
+        // You can write your JS here.
+        function toggleHide() {
+            let btn = document.getElementById('btn');
+            let para = document.getElementById('para');
+            if (para.style.display != 'none') {
+                para.style.display = 'none';
+            }
+            else {
+                para.style.display = 'block';
+            }
+        }
+
+        function displayTime() {
+            time = new Date();
+            document.getElementById('time').innerHTML = time;
+        }
+        setInterval(displayTime, 1000);
+    </script>
+
+    <!-- <script src="In Browser Javascript(Tutorial 46).js"></script> -->
+    <!-- <script src="Variables in Javascript(Tutorial 48).js"></script> -->
+    <!-- <script src="Strings in Javascript(Tutorial 49).js"></script> -->
+    <!-- <script src="String Methods in Javascript(Tutorial 50).js"></script> -->
+    <!-- <script src="Scope of a Variable and Conditional Statements in Javascript(Tutorial 51).js"></script> -->
+    <!-- <script src="Arrays and 0bjects in Javascript(Tutorial 52).js"></script> -->
+    <!-- <script src="Functions in Javascript(Tutorial 53).js"></script> -->
+    <!-- <script src="Alert, Pompt and Confirm in Javascript(Tutorial 54).js"></script> -->
+    <!-- <script src="Loops in Javascript(Tutorial 55).js"></script> -->
+    <!-- <script src="Navigating the DOM in Javascript(Tutorial 56).js"></script> -->
+    <!-- <script src="Events and Event Listening in Javascript(Tutorial 57).js"></script> -->
+    <!-- <script src="setInterval and setTimeOut in Javascript(Tutorial58).js"></script> -->
+    <!-- <script src="Date and Time in Javascript(Tutorial 59).js"></script> -->
+    <!-- <script src="Arrow Function is Javascript(Tutorial 60).js"></script> -->
+    <!-- <script src="Math Object in Javascript(Tutorial 61).js"></script> -->
+    <!-- <script src="JSON - Java Script Object Notation(Tutorial 62).js"></script> -->
+</body>
+
+</html>
