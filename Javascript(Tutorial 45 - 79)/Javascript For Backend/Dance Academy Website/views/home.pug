@@ -1,0 +1,45 @@
+extends base.pug
+
+block scripts
+    script(src="../static/index.js")
+
+block style
+    style
+        include ../static/style.css
+
+block content
+        section#introSection
+            p.first Welcome to Steps Dance Academy
+            p.second Eat Sleep Dance Repeat
+        section#ourMissionSection
+            h2 Our Mission
+            div.card
+                h3 Dance Perfection
+                div.cardBox 
+                    div.cardImg
+                        img(src="/static/images/1.png", alt="Card Image 1")
+                    div.cardContent
+                        p Keep Dancing
+
+            div.card
+                h3 Dance the way you like
+                div.cardBox 
+                        div.cardImg
+                            img(src="/static/images/2.png", alt="Card Image 2")
+                        div.cardContent
+                            p Best Dance Academy
+
+            div.card
+                h3 Get Fitter
+                div.cardBox 
+                        div.cardImg
+                            img(src="/static/images/3.png", alt="Card Image 3")
+                        div.cardContent
+                            p Let's Dance
+        section#sponsorsSection
+            h2 Out Sponsors
+            div#sponsors
+                img(src="/static/images/sponsor1.png", alt="sponsor1" class="sponsorImage")
+                img(src="/static/images/sponsor2.png", alt="sponsor2" class="sponsorImage")
+                img(src="/static/images/sponsor3.png", alt="sponsor3" class="sponsorImage")
+                img(src="/static/images/sponsor4.png", alt="sponsor4" class="sponsorImage")
