@@ -1,0 +1,35 @@
+db.items.find({rating:4.5})
+Note:- Above query will search for an item whose rating is 4.5
+{rating:4.5} is called as filter object.
+
+db.items.find({rating : {$gte : 3.5}})
+{$gte :  3.5} is filter object and here gte refers to greater than or equal to.It will search for objects with value >= 3.5
+
+Similarly :-
+gt = greater than
+lte = less than or equal to
+lt = less than
+
+Quering using and operator:-
+db.items.find({rating : {$gte : 3.5}, price: {$gt : 18000}})
+Above Query is :- rating >= 3.5 and price > 18000
+
+Querying using or operator:-
+db.items.find({ $or: [{rating: {$lt : 4.8}}, {price:{$gt : 18000}}]})
+Above Query is :- rating < 4.8 or price > 18000
+Breaking down above query:-
+db.items.find(
+    {
+        $or : [
+            {rating : {$lt : 4.8}},
+            {price : {$gt : 18000}}
+        ]
+    }
+)
+
+Using Projection Query:-
+db.items.find({rating: {$gt : 3.5}}, {rating:1})
+Above query will show only the rating and that too whose values is greater than 4.5
+
+db.items.find({rating: {$gt : 3.5}}, {rating:1, qty:1})
+Above query will show only the rating and qty(quantity) that too whose value of rating is greater than 4.5

@@ -6,12 +6,15 @@ show collections :- shows all the collections/tables inside the database
 
 use tushar (tushar is the name of the database)
 
-db.items.insertOne({name:"Samsung 30", price:220000, rating:4.5, qty:233, sold:98})
+db.items.insertOne({name:"Samsung 30", price:22000, rating:4.5, qty:233, sold:98})
+db.items.insertOne({name:"I-Phone 12", price:123000, rating:4.3, qty:269, sold:123})
 Note:-Above line adds the data to the collection 'items' inside databse tushar
 Note:- items is a collection (or table) inside database tushar. Also, above line evaluates to:- tushar.items.insertOne(Your Data/Document/Column)
 
                                            Inserting Multiple Documents in Mongo Db
 
-db.items.insertMany({name:"Samsung 231", price:24000, rating:4.5, qty:233, sold:98}, {name:"Poko F1", price:17000, rating:4.8, qty:233, sold:123})
+db.items.insertMany([{name:"Samsung 231", price:24000, rating:4.7, qty:133, sold:98}, {name:"Mi A5", price:27000, rating:4.2, qty:33, sold:12}])
 Note:-Above line adds the data to the collection 'items' inside databse tushar
-Note:- db.items.find() :- this will show all the collections in the database
+
+                                            To see all the collections inside the database
+db.items.find() :- this will show all the collections in the database

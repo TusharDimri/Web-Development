@@ -1,0 +1,26 @@
+CRUD - Create , Repeat , Update and Delete
+Above operatioons are the four basic operations that can be performed in a database.
+
+db.anotherCollection.insertOne({a: "It's Me"})
+Above line will insert the given value to the colletions anotherCollection inside the databse that we are using.
+If no such collection exists then a new collection with sam ename is created and data is then entered inside it.
+
+Similarly if we type:-
+use newDB 
+newDB database is opened for us to perform operations on. 
+If no such databse exists, then it is creatd and  is opened for us.
+
+                                            Updating Data in a MongoDb database
+
+db.items.updateOne({name: "I-Phone 12"}, {$set : {price : 75000}})
+Above line updates one value in the database (Value whose name is "I-Phone 12")
+updateOne() takes 2 objects
+First object is the filter object
+Second object contains the changes that we want to make in the database
+
+
+db.items.updateMany({name: "Samsung 30"}, {$set : {price : 13000, rating : 4.4}})
+bove line updates all the values in the database whose name is "Samsung 30"
+updateMany() takes 2 objects
+First object is the filter object
+Second object contains the changes that we want to make in the database

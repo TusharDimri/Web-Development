@@ -1,0 +1,5 @@
+db.items.deleteOne({price : 22000})
+Above query will delete one item whose price is equal to 22000.It will delete only one entery in case of multi document match.
+
+db.items.deleteMany({price : {$gt : 22000}})
+Above query will delete all the items whose price is greater than 22000
