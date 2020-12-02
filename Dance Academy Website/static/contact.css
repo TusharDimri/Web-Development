@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Lacquer&family=Yeon+Sung&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container{
+    min-height: 76vh;
+}
+
+h1{
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Lacquer', cursive;
+    margin: 20px 0px;
+    cursor: default;
+}
+
+.myInput{
+    display: block;
+    width: 50%;
+    padding: 9px;
+    margin: 8px;
+    font-size: 16px;
+    border: 2px solid black;
+    border-radius: 10px;
+    outline: none;
+    font-family: 'Yeon Sung', cursive;   
+}
+
+.myForm{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.btn{
+    padding: 8px 16px;
+    font-size: 18px;
+    background-color: #e93e3e;
+    color: white;
+    cursor: pointer;
+    border: 3px solid black;
+    font-family: 'Yeon Sung', cursive;   
+    border-radius: 10px;
+    outline: none;
+}
+
+.btn:hover{
+    background-color: gray;
+    color: black;
+}
