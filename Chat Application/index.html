@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>i-Chat - Realtime Node Socket IO Chat App</title>
+    <script defer src="http://localhost:8000/socket.io/socket.io.js"></script> 
+    <!-- Above line connects client with socket server -->
+    <script defer src="js/client.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <img class="logo" src="chat.png" alt="logo">
+        <h1>Welcome to i-Chat App</h1>
+    </nav>
+    <div class="container">
+        <!-- <div class="message right">Tushar: Hello</div>
+        <div class="message left">Tushar: Hii</div> -->
+    </div>
+    <div class="send">
+        <form action="#" id="sendContainer">
+            <input type="text" name="messageInp" id="messageInp">
+            <button type="submit" class="btn">Send</button>
+        </form>
+    </div>
+</body>
+</html>
