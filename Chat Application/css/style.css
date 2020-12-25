@@ -10,11 +10,19 @@ body{
 
 .logo{
     display: block;
-    width: 100px;
-    height: 100px;
+    width: 69px;
+    height: 69px;
     margin: auto;
+    margin-top: 3px;
 }
 
+.navbar h1{
+    margin-top: 12px;
+    font-size: 30px;
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
 
 .container{
     max-width: 955px;
@@ -27,16 +35,10 @@ body{
     margin-top: 20px;
 }
 
-.navbar h1{
-    margin-top: 12px;
-    font-size: 30px;
-    font-size: 30px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-align: center;
-}
 
 .message{
     display: block;
+    white-space: pre-wrap;
     background-color: #ebdbdb;
     width: 24%;
     padding: 10px;
@@ -59,18 +61,27 @@ body{
 }
 
 #sendContainer{
-    max-width: 985px;
+    display: flex;
+    flex-direction: row;
     width: 100%;
+    max-width: 985px;
+    justify-content: center;
+    align-items: center;
     margin: auto;
     text-align: center;
 }
 
 #messageInp{
     width: 69%;
+    padding: 7px 13px;
     border: 2px solid black;
     border-radius: 10px;
-    height: 34px;
+    height: 69px;
     outline: none;
+    font-size: 20px;
+    margin-right: 5px;
+    word-wrap: break-word;
+    resize: none;
 }
 
 .btn{
