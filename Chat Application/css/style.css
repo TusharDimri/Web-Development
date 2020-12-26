@@ -6,6 +6,7 @@
 body{
     height: 100vh;
     background-image: linear-gradient(rgb(255, 255, 255), rgb(109, 39, 239));
+    overflow: auto;
 }
 
 .logo{
@@ -35,7 +36,7 @@ body{
     margin-top: 20px;
 }
 
-
+/* Box(div) that contains the message */
 .message{
     display: block;
     white-space: pre-wrap;
@@ -60,6 +61,7 @@ body{
     clear: both;
 }
 
+/* Form:- */
 #sendContainer{
     display: flex;
     flex-direction: row;
@@ -71,6 +73,7 @@ body{
     text-align: center;
 }
 
+/* Input Textarea */
 #messageInp{
     width: 69%;
     padding: 7px 13px;
@@ -84,6 +87,7 @@ body{
     resize: none;
 }
 
+/* Button(To Submit Message) */
 .btn{
     height: 34px;
     cursor: pointer;
