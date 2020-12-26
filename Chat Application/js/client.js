@@ -19,7 +19,7 @@ const append = (message, position) => {
 
 const name = prompt("Enter your name to join");
 socket.emit('new-user-joined', name);
-// Above line emits the new-user-joined evnt to the server.
+// Above line emits the new-user-joined event to the server.
 
 // Here, we listen to the user-joined event emitted by the server:-
 socket.on('user-joined', name=>{
