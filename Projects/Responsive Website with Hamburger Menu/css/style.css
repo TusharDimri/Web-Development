@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+p{
+    cursor: default;
+}
+
+section{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.navbar{
+    display: flex;
+    position: sticky;
+    top: 0px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+.logo img{
+    filter: invert(100%);
+    width: 60px;
+    height: 60px;
+    border: 2px solid black;
+    border-radius: 50px;
+}
+
+.nav-list{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.nav-list li{
+    list-style: none;
+}
+
+.nav-list li a{
+    text-decoration: none;
+    color: white;
+}
+
+.nav-list li a:hover{
+    color: black;
+    border: 3px solid black;    
+    background-color: grey;
+}
+
+.right-nav{
+    width: 40%;
+    text-align: right;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.right-nav button{
+    margin-right: 10px;
+}
+
+#search{
+    padding: 5px;
+    font-size: 17px;
+    border: 2px solid grey;
+    border-radius: 9px;
+}
+
+.background{
+    background: rgba(0, 0, 0, 0.7) url('../img/bg.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.box-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.box-main .s-half img{
+    height: 270px;
+    width: 270px;
+    filter: invert(100%);
+    border: 2px solid black;
+    border-radius: 140px;
+    display: block;
+    margin: auto;
+}
+
+.first-section{
+    height: 90vh;
+}
+
+.f-half{
+    width: 70%;
+}
+
+.s-half{
+    width: 30%;
+}
+
+.box-main{
+    width: 50%;
+    margin: auto;
+    height: 80%;
+}
+
+.text-big{
+    text-align: center;
+    font-size: 35px;
+}
+
+.text-small{
+    text-align: center;
+    font-size: 15px;
+    color: grey;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.btn{
+    font-family: 'Ubuntu', sans-serif;
+    background: none;
+    padding: 8px 20px;
+    border: 2px solid white;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    margin-top: 3px;
+    margin: 7px 3px;
+    outline: none;
+}
+
+.btn:hover{
+    color: black;
+    border-color: black;
+    border-width: 3px;
+    background-color: grey;
+}
+
+.btn-sm{
+    padding: 6px 10px;
+}
+
+
+.buttons{
+    display: flex;
+    justify-content: center;
+}
+
+.sec{
+    height: 400px;
+    background-color: #d9d9d9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 80%;
+    margin: auto;
+    justify-content: space-evenly;
+    margin-top: 15px;
+}
+
+.sec-left{
+    flex-direction: row-reverse;
+}
+
+.imgFluid{
+    height: 300px;
+    width: 300px;
+    margin-top: 2px;
+}
+
+#contact{
+    font-family: 'Ubuntu', sans-serif;
+    height: 89vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 13px;
+    background-color: aliceblue;
+}
+
+#contact h1{
+    text-align: center;
+    font-size: 50px;
+    cursor: default;
+}
+
+.contact-form{
+    max-width: 720px;
+    margin: 25px auto;   
+}
+
+.contact-form .form-input{
+    width: 100%;
+    padding: 5px;
+    font-size: 18px;
+    border: 2px solid black;
+    border-radius: 6px;
+    margin: 20px 0px;
+}
+
+.contact-btn{
+    display: block;
+    margin: auto;
+    color: black;
+    border-color: black;
+}
+
+.contact-btn:hover{
+    background-color: #d9d9d9;
+}
+
+footer{
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 19px;
+    padding: 13px;
+    cursor: default;
+}
+
+.burger{
+    position: absolute;
+    right: 5%;
+    top: 15px;
+    cursor: pointer;
+    display: none;
+}
+
+.line{
+    background-color: white;
+    width: 33px;
+    height: 4px;
+    margin: 4px 4px;
+}
+
+
+/* Responsiveness */
+
+@media only screen and (max-width: 1015px){
+    .burger{
+        display: block;
+    }
+    .nav-list{
+        flex-direction: column;
+        margin: auto;
+        justify-content: center;
+        margin: 5px 0px;
+    }
+    .nav-list li{
+        margin: 5px 0px;
+    }
+    .navbar{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.7s ease-out;
+        height: 344px;
+        background: rgba(0, 0, 0, 0.8);
+    }
+    .right-nav{
+        margin: 5px 0px;
+    }
+    .h-nav{
+        height: 55px;
+    }
+    .visibility{
+        opacity: 0;
+    }
+    
+}

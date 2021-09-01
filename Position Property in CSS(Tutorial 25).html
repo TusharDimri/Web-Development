@@ -6,9 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Position Property in CSS</title>
     <style>
-        /* CSS Positions:- static(default), relative, sticky, fixed */
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        /* CSS Positions:- static(default), absolute, relative, sticky, fixed */
         .parent{
             height: 3000px;
+            border: 2px solid black;
         }
         .box {
             border: 2px solid black;
@@ -22,24 +27,28 @@
         #box3 {
             position: relative;
             /* Position the element relative to its normal position and will leave a gap at its normal position*/
+            /* Other content will not be adjusted to fit into any gap left by the element */
             top: 25px;
         }
         #box1 {
             position: absolute;
-            /* Position the element relative to its first parent container */
+            /* Position the element relative to the html element (body) or its parent if that is positioned*/
+            /* When we position an element as absolute, other elements will atmoatically fill its gap. */
             top: 100px;
             left: 1000px;
         }
         #box4{
             position: fixed;
             /* Positions the element relative to the browser window and fixes it there */
+            /* A fixed element does not leave a gap in the page where it would normally have been located rather other elements automatically occupy its space(like absolute element)*/
             bottom: 2px;
             right: 2px;
         }
         #box2{
             position: sticky;
             top: 10px;
-            /* Positions the element relative to the first parent container and element gets fixed wehn we scroll to the specified position */
+            /* Positions the element relative to itself and element gets fixed when we scroll to the specified position */
+            /* A sticky element is a mixture of fixed and relative element */
         }
     </style>
 </head>
