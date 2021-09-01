@@ -1,0 +1,8 @@
+<hr size="3" noshade>
+Here, size - "" and noshade are HTML Attribute of the tag hr.
+
+<hr> and <br> are self closing tags.
+
+<!-- This is an HTML Comment -->
+
+Check out documentation online to get more information about HTML tags.
