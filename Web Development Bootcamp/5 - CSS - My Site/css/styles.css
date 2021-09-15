@@ -1,0 +1,169 @@
+body{
+    margin: 0;
+    text-align: center;
+    /* Above line works with only inline-block elemnts or full width block elements like h1, p, etc. */
+    /* If we are dealing with block or inline-block elements with a defined width then we center them using margin:auto; property. */
+    color: #40514E;
+    line-height: 2;
+}
+h1{
+    /* font-size: 90px; */
+    /* font-size: 562.5%; */
+    /* font-size: 5.625em; */
+    /* 100% font size = 16px */
+    /* font-size in em(phonetic pronounciation of the letter M) where 1 em = 16px.*/
+    /* 
+    Note:
+    Both em and % font-sizes are relative to the parent's font-size and is not always relative to 16
+    % and this ,akes it hard to debig our code if we make a mistake and this is why the use of rem is preferred for dynamic font-sizing in most cases.
+     */
+    font-size: 5.625rem;
+    /* rem(root M) is relative to the root font size and not relative to the parent's font size.*/
+    font-family: 'Sacramento', cursive;
+    margin: 0 auto;
+    color: #66BFBF;
+}
+
+h2{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0 auto;
+    font-size: 2.5rem;
+    color: #66BFBF;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+h3{
+    font-family: 'Montserrat', sans-serif;
+    color: #11999E;
+    font-weight: bold;
+    margin: 0 auto;
+}
+
+a{
+    color: #11999E;
+    text-decoration: none;
+}
+
+p{
+    font-family: 'Merriweather', serif;
+    color: #40514E;
+    font-weight: bold;
+}
+
+.top-container{
+    background-color: #E4F9F5;
+    position: relative;
+    padding-top: 100px;    
+    /* height: 100vh; */
+}
+
+.pro{
+    text-decoration: underline;
+}
+
+#programmmer{
+    font-weight: normal;
+    margin-bottom: 38px;
+}
+
+#cloud1{
+    position: absolute;
+    top:8%;
+    right:20%;
+}
+
+#cloud2{
+    position: absolute;
+    top: 50%;
+    left: 23%;
+}
+
+#mountain{
+    margin-bottom: -10px;
+}
+
+.middle-container{
+    width: 50%;
+    margin: 2rem auto;
+}
+
+.profile{
+    width: 50%;
+    margin: 50px auto;
+}
+
+.skills{
+    margin: 50px 0;
+}
+
+
+.skill-row{
+    width: 70%;
+    margin: 100px auto;
+    text-align: left;
+}
+
+.computer{
+    width: 45%;
+    float: left;
+    margin-right: 2rem;
+}
+
+.chillies{
+    width: 45%;
+    float: right;
+    margin-left: 2rem;
+}
+
+.contact-me{
+    margin: 50px auto;
+}
+
+
+.bottom-container{
+    background-color: #66BFBF;
+    margin-bottom: 0;
+}
+
+.bottom-container a{
+    display: inline-block;
+    padding: 20px 10px 10px;
+    font-weight: bold;
+}
+
+.bottom-container a:hover{
+    color: white;
+}
+
+.bottom-container p{
+    color: #EAF6F6;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 20px;
+}
+
+
+hr{
+    border-style: none;
+    border-top: 2px dotted grey;
+    width: 7%;
+    border-width: 5px;
+}
+
+.btn{
+    background-color: #11999E;
+    color: white;
+    height: 40px;
+    width: 150px;
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 12px;
+    margin: 13px auto;
+    border-style: none;
+}
+
+.btn:hover{
+    cursor: pointer;
+    background-color: #66BFBF;
+}
