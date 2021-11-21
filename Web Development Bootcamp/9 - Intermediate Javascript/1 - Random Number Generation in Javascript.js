@@ -6,7 +6,7 @@ n = n * 6;
 n = Math.ceil(n);
 // Ponder why we use Math.ceil() and not Math.floor().
 // n = Math.floor(n)+1;
-console.log(n); // n will be bwtween 1 and 6
+console.log(n); // n will be between 1 and 6
 
 // Random Love Calculator 
 // l1 = prompt("Enter your name: ");
