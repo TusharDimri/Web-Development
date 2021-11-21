@@ -10,3 +10,6 @@ nm = prompt("Enter your name");
 if (guestList.includes(nm)) {
     console.log("Welcome", nm);
 }
+else{
+    console.log("Sorry, maybe next time");
+}
