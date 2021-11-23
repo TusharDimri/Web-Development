@@ -1,0 +1,1 @@
+console.log("This line is printed using External Javascript.");
