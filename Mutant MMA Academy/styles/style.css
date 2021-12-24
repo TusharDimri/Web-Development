@@ -1,0 +1,79 @@
+h1, h2, h3, h4, h5, h6, p:hover{
+    cursor: default;
+}
+
+.navbar .logo{
+    height: 7rem;
+    width: 7rem;
+}
+
+.navbar-nav .nav-link{
+    font-size: 1.3rem;
+    color: #4E9F3D;
+    font-family: 'Lato', sans-serif;
+}
+
+
+.nav-link:hover{
+    color: #1E5128;
+}
+
+#title{
+    background-color: black;
+    color: #4E9F3D;
+}
+
+.title-container{
+    padding: 17% 7% 5%;
+    
+}
+
+.title-image{
+    width: 70%;
+    height: 98%;
+    display: block;
+    margin: 0 auto;
+}
+
+.title-heading{
+    text-align: center;
+    font-family: 'acumin-pro-condensed','Open Sans Condensed',sans-serif;
+    font-weight: bold;
+    font-size: 2.8rem;
+}
+
+.title-quote{
+    text-align: center;
+    margin-top: 16px;
+    color: #D8E9A8;
+    font-family: 'acumin-pro-condensed';
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+/* Footer Section */
+
+#footer{
+    text-align: center;
+    padding: 3% 7%;
+    color: #4E9F3D;
+    background-color: black;
+}
+
+#footer .social{
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+
+#footer .social i{
+    color: #4E9F3D;
+}
+
+#footer .social i:hover{
+    color: #D8E9A8;
+}
+
+#footer .icons{
+    padding: 1.2rem;
+}
