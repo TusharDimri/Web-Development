@@ -1,0 +1,21 @@
+mkdir "Directory/Folder Name" : To create a new Directory/Folder.For Example:
+		mkdir Practice
+		cd Practice/
+
+touch "filename" : To create a new file. For Example:
+		touch practice.txt
+
+open practice.txt(For MAC)/ start practice.txt(For Windows). 	
+
+start code(VS Code) practice.txt(For Windows)/ open -a code(VS Code) practice.txt(For MAC).
+
+pwd : print working directory.
+
+rm practice.txt : To remove file.
+		rm  * : Remove all files in present Directory.
+
+rm -r "Directory/Folder Name" : To remove a Direcotry/Folder.For Example:
+		rm -r Practice
+
+
+Be careful with rm command as we can accidentlt remove files and directories. With great power comes great responsibiltiy.

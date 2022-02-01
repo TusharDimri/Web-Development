@@ -1,0 +1,24 @@
+Hyper allows us to access Bash Shell.
+
+If we think of our Operating System as a pistachio nut, then the kernal is the actual pistchio that we are going to eat while the shell is the shell of the nut.
+
+In computing, the kernal refers to the actual program that interfaces with the harware. So, it's the core of our Operating System. 
+
+The Shell, in computing refers to the User Interface for us as humans to be able to interact with the kernal and in turn with the hardware of our computer.
+
+There are 2 variants to a Shell:
+1. Graphical User Interface Shells (Windows, Mac or Linux GUI).
+2. Command Line Interface(Alternative way fo interacting with the kernal).
+
+BASH Shell - Bourne Again Shell
+This is named after Mr. Bourne, its creater. The Bash Shell is a CLI(Command Line Interpreter) for the UNIX system.We find UNIX like or UNIX based systems all over the place.
+For example: Linux is a UNIX like system and a lot of servers will run on UNIX and even MAC OS 10 or the newly named MAC OS runs on a UNIX like Operating System. This is a completely different family from the windows side of things, which used DOS and Windows.
+
+A lot of things that we can do with the command line can be done using the Graphcal User Interface. But, at the end of the day it all boils down to is about greater control and in our journey of becoming a better developer we will need to understand and exert more power over our tools that is the computer hardware. 
+
+As a regular command line user you'll find that it's actually easier and faster to do a lot of common things using command line. For example: 
+mkdir "Folder Name" - This is uded to create a folder.
+
+GUI's try to hide a lot of complicated or the unnecessary stuff like configuration files from the user. But with the Command Line, we have full control and a lot of flexibility. 
+For Example: 
+ls -a : this command will show all the files in the directory(including hidden files).

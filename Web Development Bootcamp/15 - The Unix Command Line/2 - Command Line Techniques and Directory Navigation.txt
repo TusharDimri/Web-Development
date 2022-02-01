@@ -1,0 +1,13 @@
+ls : ls stands for list and this lists all the items inside a particular directory.
+cd: this allows us to navigate to different directiories. 
+        cd ../ : Move to previous directory.
+        cd ~ : Move to the root directory.
+        cd Desktop/LUCIFER
+
+Tricks:
+
+ctrl + A : move to start of command.
+ctrl + E : move to end of command.
+ctrl + U: clear command.
+Up Arrow Key and Down Arrow Key: previous commands.
+tab key: autocomplete.
