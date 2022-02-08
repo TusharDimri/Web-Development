@@ -1,0 +1,10 @@
+API stand for Application Programming Interface.
+
+An API is a set of commands, functions, protocols and objects that programmers can use to create software or interact with an external system.
+
+Let's say you're going to a restaurant, and in a restaurant we know that there are things that are on the menu like sushi, steak, etc but you could also go to the kitchen and you would find there's loads of raw ingredients, and probably a couple of surprised chefs as to what it is you're doing there. Now if you had just decided that you were going to go into the kitchen pantry and just start eating things that are there like peanut butter then the restaurant's going to be pretty shocked, right, and they're going to be pretty unhappy about that.
+That's because there are certain things which they sell but then there's other things which are kind of off limits.
+It's kinda similarwith data. For every website that has their own data, like Facebook, which has data on their users, or something like the Police API, which has data on crimes, there's certain pieces of data which they will allow you to access, and there's also data that's really not your business. So, how can these sites tell you what are the things tha you can actually access from them and how to do that?
+In a restaurant they migh provide that information in the form of a menu, and for a service like a weather API, say like OpenWeatherMap, then the kind of data that you can access include things like the temperature, the weather conditions, the weather images, and maybe the atmospheric pressure. 
+An API, some people consider to be a contract. It's a contract between data provider and the developer and essentially what it says it that these are all the things developers can access and these are the methods, the objects, the protocols that you would use to access them and we as the web site that host the data will try not to change any of these methods or functions without notifying you.
+AN example of an API to create software is jQuery.
