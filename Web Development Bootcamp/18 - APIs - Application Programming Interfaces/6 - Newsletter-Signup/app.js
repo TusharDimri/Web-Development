@@ -65,9 +65,8 @@ app.post("/failure", (req, res)=>{
     res.redirect("/");
 });
 
-app.listen(3000, ()=>{
+app.listen(process.env.PORT || 3000, ()=>{
     console.log(`Server is running in port ${port}`);
 });
 
-//  e1bd0f54f0a9921d6679419e366b2b24-us14
-//  c623f47ca6
+//  https://protected-beyond-54348.herokuapp.com/
