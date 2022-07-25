@@ -2,17 +2,29 @@
 
 const express = require("express");
 const bodyParser = require("body-parser");
+const date = require(__dirname + "/date.js");
+
+// console.log(date());
 
 const port = 3000;
 const app = express();
 app.use(bodyParser.urlencoded({extended: true}));
+app.use(express.static("public"));
 
 
 app.set('view engine', 'ejs'); // EJS not the onle way that we can use to do templating.
-var tasks = [];
+const tasks = [];
+const work_items = []
+/*
+Note:
+While working with arrays, const keyword if used to declare an array, then the array cannot be changed but we can append items to that array even though it's declared using const.
+
+In case of an object, a const object cannot be changed but we can change the calues associated with it.
+
+So, we can say that Javascript constants are'nt protecting the things inside the constant but are protecting only the constant itself.
+*/
 
 app.get("/", (req, res)=>{
-    let today = new Date();
 
     // let currentDay = today.getDay();
     // if (currentDay === 6 || currentDay === 7){
@@ -49,23 +61,34 @@ app.get("/", (req, res)=>{
     //     default:
     //         break;
     // }
-    let options = {
-        weekday: "long",
-        day: "numeric",
-        month: "long",
-    };
-
-    let day = today.toLocaleDateString("en-US", options);
-
+    
+    let day = date.getDate();
+    console.log(date.getDay());
     
     // res.sendFile(__dirname+"/index.html");
-    res.render("index", { day: day, tasks: tasks});
+    res.render("index", {tasks: tasks, listTitle: day});
 });
 
 app.post("/", (req, res) => {
-    tasks.push(req.body.task);
-    console.log(tasks);
-    res.redirect("/");
+    // console.log(req.body);
+    if (req.body.list === "Work") {
+        work_items.push(req.body.task);
+        console.log(work_items);
+        res.redirect("/work");
+    }
+    else{
+        tasks.push(req.body.task);
+        console.log(tasks);
+        res.redirect("/");
+    }
+});
+
+app.get("/work", (req, res) => {
+    res.render("index", {listTitle: "Work", tasks:work_items});
+});
+
+app.get("/about", (req, res) => {
+    res.render("about")
 });
 
 app.listen(port, ()=>{
