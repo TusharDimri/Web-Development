@@ -1,0 +1,14 @@
+Push an existing repository from the command line:
+
+git remote add origin https://github.com/TusharDimri/Story.git
+=> This tells that we have created a remote repository somewhere on the internet and want to copy contents of our repository to that remote repository. 
+origin => This is the name of the remote and we can theoretically call it anything. The name origin is just by convention.
+
+
+
+git push -u origin master
+=> This pushes our local repository to the remote repository using the -u flag which basically links our remote and local repositories. Then we are going to push it towards the remote that's called origin and we're goin to push it to the branch called master. 
+master branch is the default and main branch of our commits.
+
+Working Directory  -->  Staging Area  -->  Local Repository -->  Remote Repoitory
+                                                 git                   git hub

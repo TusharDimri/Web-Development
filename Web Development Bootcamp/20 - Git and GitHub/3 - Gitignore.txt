@@ -1,0 +1,14 @@
+Create a .gitignore file in your Working Directory.
+
+Add files to be ignored:
+secrets.txt
+.
+.
+.
+
+Rules for gitignore:
+# For comments
+*.txt  => All .txt files.
+
+git rm --cached -r .
+Remove from staging area.

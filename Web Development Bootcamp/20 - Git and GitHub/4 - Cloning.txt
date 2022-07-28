@@ -1,0 +1,3 @@
+Cloning from GitHub(Remote Repository --> Local Repository):
+
+git clone "Remote Project Link"
