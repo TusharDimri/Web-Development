@@ -1,0 +1,9 @@
+Now, we'll be learning collaboration using remote repositories and GitHub.
+
+Let's say that I (Tushar) own a remote repository. I created it locally and I pushed it to my remote repository on Git Hub. Let's say there's another person (K) who also wanted to make changes to our repository. In order for K to work on my repository, K can make a copy of it that exists on her account (This is different from cloning. Cloning is just grabbing the entirety of the repository and then cloning it to our local work environment). In this case, we're just copying a repository that's hosted on GitHub and we're keeping the copy on our own GitHub accout so that we can make changes to it. This, in terms of GitHub lingo is called forking.
+
+Once we fork a remote repository, then we own a copy of it.We have the permissions to do whatever changes we want. Let's say K has forked my repository and on her account she has a copy of my repository. She can clone that repository and work on that locally. She can do whatever she wants and work on that repository. Is K wants me to incorporate those changes she made into my repository then her only option is to make a pull request(If she is not into those trusted pool of people who have read or write permissions for my repository). Is she only has read access, then she would have to make a pull request and it's almost like making a suggestion (Here are some suggestion by me. If you ok it then please merge it to your remote repository). The reason why it's called a pull request and not a push request is because the person who has the right permission to the repository (me in this case) has the deciding power to pull those changes to the repository.
+
+After reviewing K's code, if I like the changes she made, then I can approve the pull request and merge her repository with my own.
+
+Check video tutorial to learn how to do these things.
