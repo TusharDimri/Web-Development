@@ -1,0 +1,28 @@
+SQL: Structured Query Language
+
+1. Examples: MySQL, Postgre SQL, etc.
+
+2. Structure: Structired in the form of records with fixed columns. SQL data is structured in the form of tables. SQL databases are structured.
+
+3. Relationship between Data: SQL databases are also called relational databases. This i because SQL Databases are really good at establishing relationships between out data.
+
+4. Scalability: SQL databases are not good on the Scalabilty front when compared to SQL Databases.
+
+
+
+NoSQL: Not Only SQL(Other than SQL).
+
+1. Examples: Mongo DB, Redis, etc.
+
+2. Structure: Data is stroed in the form of recored which resemble JSON objects(key-value pairs). One record can be different from the other with respect to number and type of keys and their values. NoSQL databases might or might not follow a structure. NoSQL Databases are Document Structured.
+
+3. Relationship between Data: NoSQL databases are also called non-relational databases. With NoSQL Databases we have to rethink how we organize our data. While working with data with relationship this type of databases are not as efficient or fast as a SQL Database.
+
+4. Scalability: Despite it being weaker on the Relationship front, one of the reason why one might use NoSQL over SQL is because of Scalability.
+
+
+
+
+Both SQL and NoSQL databases have their pros and cons and we have to choose our database depending on the particular situation. For example:
+If we need to store data such as orders, customer details, products invntory, things that hvae lots of relationships between each other then we might be better of choosing a SQL Database such as MySQl.
+However, if we have a website where we have something that's more of a one to many kind of relationship (demonstrated in the tutorial video) then we are better off with databases like ,Mongo DB.
