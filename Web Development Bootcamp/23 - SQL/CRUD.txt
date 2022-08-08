@@ -1,0 +1,55 @@
+CRUD - Create, Read, Update and Destroy.
+
+
+
+
+1. Creating a table and inserting values:  
+
+CREATE TABLE customers(
+
+   ID   INT              NOT NULL,
+
+   FIRST_NAME VARCHAR (20)     NOT NULL,
+
+   LAST_NAME VARCHAR (20)     NOT NULL,
+
+   ADDRESS  CHAR (25) ,
+
+   PRIMARY KEY (ID)
+
+  );
+
+INSERT INTO customers (ID, FIRST_NAME, LAST_NAME, ADDRESS)
+
+VALUES (1, 'John', 'Doe', '32 Cherry Blvd');
+
+INSERT INTO customers
+
+VALUES (2, 'Angela', 'Yu', '12 Sunset Drive');
+
+
+
+2. Reading Data:
+
+SELECT * FROM customers
+
+SELECT * FROM customers
+WHERE FIRST_NAME='Angela'
+
+
+
+3. Updating Data:
+
+UPDATE customers
+SET last_name="Mayer"
+WHERE first_name="John";
+
+ALTER TABLE customers
+ADD PROFESSION STRING;
+
+
+
+4. Deleting Data:
+
+DELETE FROM customers
+WHERE id=1;
