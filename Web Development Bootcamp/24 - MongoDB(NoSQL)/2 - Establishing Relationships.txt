@@ -1,0 +1,42 @@
+The preferred way to eastablish relationship between data in MongoDB:
+
+db.products.insert({
+	_id: 3,
+	name: "Eraser",
+	price: 1.3,
+	stock: 43,
+	reviews: [
+		{
+			authorName: "Sally",
+			rating: 5,
+			review: "Amazing Eraser"
+		},
+		{
+			authorName: "James",
+			rating: 4.8,
+			review: "Good Product"
+		}
+	]
+})
+
+db.products.insert({
+	_id: 2,
+	name: "Pencil",
+	price: 0.8,
+	stock: 12,
+	reviews: [
+		{
+			authorName: "Megan",
+			rating: 5,
+			review: "Very Uselful"
+		},
+		{
+			authorName: "James",
+			rating: 4.6,
+			review: "Just what i was looking for"
+		}
+	]
+})
+
+
+As we can see, the relationship between the product and the reviews is established in this way. This style is really well suited for one to many relationship(1 product can have many reviews, one product can have many comments). This is a very natural way of expressing relationship in MongoDB.
