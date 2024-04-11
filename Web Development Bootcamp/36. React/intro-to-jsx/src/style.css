@@ -1,0 +1,20 @@
+.heading {
+  color: #61dafb;
+}
+
+.timeMachine {
+  font-size: large;
+  font-family: monospace;
+  font-style: italic;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  color: #999;
+}
+
+.test-img {
+  width: 200px;
+  height: 200px;
+}

@@ -1,7 +1,0 @@
-Endpoint: Every API tha interacts with an external system like a server will have an endpoint. For example:
-            "https://api.kanye.rest" is an endpoint of Kanye Rest API and we csn send get request on this endpoint to get a random quote by Kanye West.
-
-In addition to Endpoints there are also a bunch of Paths and Parameters which we can use to narrow down to a specific piece of data that we want from an external server. For example:
-    "https://v2.jokeapi.dev/joke/Dark" : Here we are using joke api to get dark jokes and as we cutomise fornthe type of joke that we want, the path of the endpoint changes accordingly. We can add parameters to our url from documentation and these go to the end of the url. For example:
-    "https://v2.jokeapi.dev/joke/Dark?contains=girl"
-    This url will on getting a get request return a dark joke with the given keyword.

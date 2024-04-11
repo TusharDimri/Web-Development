@@ -1,5 +1,0 @@
-Express is a Node Js framework(like jQuery is a Javascript front-end framework) for back-end. It adds some extra features and helps to organize and structure our code, specifically for Web Applications built with Node. Node Js was made to liberate Javascript from the browser and allow us to use JS in our systems(or servers). We can also use Node Js to create Desktop Applications, for example: VS Code and Atom are based on Electron which is built on Node. So the scope od Node JS is really Broad.
-
-We can think of Node as  a screwdriver which we can ue to screw and unscrew a lot of screws but manually using a screwdriver can get pretty tiring and slow. So that means in certain cases, for specialized uses, like a lot of DIY we can use a motorised screwdriver. This motorised screwdriver  is Express with Node. 
-
-Express was built to make us write less repetetive code when we're building Web Applications and t's made specifically for web developers. When we're using express we're saving ourselves a lot of time from writing code that we have to write without Express.

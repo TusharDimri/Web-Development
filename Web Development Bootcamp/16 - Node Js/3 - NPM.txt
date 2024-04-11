@@ -1,6 +1,0 @@
-NPM - Node Package Manager.
-
-This allows us to manage external Node Js modules. Apart from the native node modules that come preinstalled with node there are some external Node Js modules which we might want to use. The packages we install are bits of reusable code which someone else wrote and using NPM we can incorporate those packages in our project. NPM is preinstalled with node.
-
-To start using NPM:
-npm init

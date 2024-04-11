@@ -1,5 +1,0 @@
-REPL - Read Evaluation Print Loop.
-
-It basically allows us to execute code in bite sized chunks just as we did with the Chrome Developer Tools console.
-After installing node and cheking its version, type node in ther terminal to enter this mode. This is just like the console in Chrome Developer Tools.
-Top exit simply type .exit ot press ctrl + c.

@@ -1,6 +1,0 @@
-Wehn it ocmes to data that's more monetizable, or allows developers to build more complex appications that might be used by hundreds or thousands of users, then these websites have to start to think very carefullt about how to either monetize our use og their data how to limit our use to a threshold and this is done using Authentication.
-So, every time we make a request through an API, they have to be able to identify us as the developer, and have to keep track of how we're using their server to get data, and then charge us, or limit us accordingly. An example of this is Open Weather API. 
-https://api.openweathermap.org/data/2.5/weather?q=dehradun&units=metric&appid=86cdefa3662381c3e5a5d69c170b3d7e
-
-After the ? are the parameters which are key=value pairs and are seperated by & .
-
