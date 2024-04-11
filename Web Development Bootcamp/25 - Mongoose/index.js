@@ -89,7 +89,7 @@ const Person = mongoose.model("Person", peopleSchema);
 // const persve(on5 = new Person({
 //     age: 10,
 // });
-// person5.sa);
+// person5.save();
 
 // Updating the data:
 // Person.updateOne(
